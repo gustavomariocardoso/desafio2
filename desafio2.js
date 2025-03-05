@@ -5,17 +5,17 @@ let saldo = win - loss
 function partidaRanking (saldo){
     let ranking = ""
 
-    if(resultado <= 10){
+    if(saldo <= 10){
         ranking = "Ferro"
-    } else if (resultado >= 11 && resultado <=20){
+    } else if (saldo >= 11 && saldo <=20){
         ranking = "Bronze"
-    } else if(resultado >= 21 && resultado <= 50){
+    } else if(saldo >= 21 && saldo <= 50){
         ranking = "Prata"
-    } else if (resultado >= 51 && resultado <= 80){
+    } else if (saldo >= 51 && saldo <= 80){
         ranking = "Ouro"
-    } else if (resultado >= 81 && resultado <=90){
+    } else if (saldo >= 81 && saldo <=90){
         ranking = "Diamante"
-    } else if(resultado >= 91 && resultado <= 100){
+    } else if(saldo >= 91 && saldo <= 100){
         ranking = "Lendário"
     } else {
         ranking = "Imortal"
@@ -24,4 +24,4 @@ function partidaRanking (saldo){
 return ranking
 }
 
-console.log(`O nível do jogador é ${partidaRanking} `)
+console.log("O nível do jogador é " + partidaRanking())
